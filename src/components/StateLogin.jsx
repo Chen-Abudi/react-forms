@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Input from "./Input.jsx";
 
 export default function Login() {
   // const [enteredEmail, setEnteredEmail] = useState("");
@@ -15,6 +16,8 @@ export default function Login() {
   });
 
   const emailIsInvalid = didEdit.email && !enteredValues.email.includes("@");
+  const passwordIsInvalid =
+    didEdit.password && enteredValues.password.trim().length < 6;
 
   function handleFormSubmit(evt) {
     evt.preventDefault();
@@ -53,7 +56,17 @@ export default function Login() {
       <h2>Login</h2>
 
       <div className="control-row">
-        <div className="control no-margin">
+        <Input
+          label="Email"
+          id="email"
+          type="email"
+          name="email"
+          onBlur={() => handleInputBlur("email")}
+          onChange={(evt) => handleInputChange("email", evt.target.value)}
+          value={enteredValues.email}
+          error={emailIsInvalid && "Please enter a valid email!"}
+        />
+        {/* <div className="control no-margin">
           <label htmlFor="email">Email</label>
           <input
             id="email"
@@ -66,9 +79,20 @@ export default function Login() {
           <div className="control-error">
             {emailIsInvalid && <p>Please enter a valid email address.</p>}
           </div>
-        </div>
+        </div> */}
 
-        <div className="control no-margin">
+        <Input
+          label="Password"
+          id="password"
+          type="password"
+          name="password"
+          onBlur={() => handleInputBlur("password")}
+          onChange={(evt) => handleInputChange("password", evt.target.value)}
+          value={enteredValues.password}
+          error={passwordIsInvalid && "Please enter a valid password!"}
+        />
+
+        {/* <div className="control no-margin">
           <label htmlFor="password">Password</label>
           <input
             id="password"
@@ -77,7 +101,7 @@ export default function Login() {
             onChange={(evt) => handleInputChange("password", evt.target.value)}
             value={enteredValues.password}
           />
-        </div>
+        </div> */}
       </div>
 
       <p className="form-actions">
