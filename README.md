@@ -1,7 +1,5 @@
 # react-forms
 
-**Developed by** **`Grace Chen Abudi`** 👩🏽‍💻
-
 ## 📣 Overview:
 
 - Intro
