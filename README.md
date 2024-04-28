@@ -27,6 +27,8 @@ This is a practice project in React, and its main focus is on working with **`fo
 - **`Input Validation`**:
   - **Upon lost focus (blur)**
   - **Upon form submission**
+  - **`Via built-in validation props`**:
+    - **e.g. required**
 
 ---
 
