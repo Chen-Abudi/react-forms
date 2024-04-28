@@ -24,6 +24,9 @@ This is a practice project in React, and its main focus is on working with **`fo
 - **`Web APIs`**:
   - **FormData**: Provides a way to construct a set of key/value pairs representing form fields and their values.
 - **`Native Browser APIs`**: Native Browser APIs are built into the browser and provide native features that can also be used in a web app.
+- **`Input Validation`**:
+  - **Upon lost focus (blur)**
+  - **Upon form submission**
 
 ---
 
