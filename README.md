@@ -13,7 +13,7 @@ This is a practice project in React, and its main focus is on working with **`fo
 
 ## 🧰 Tech Stack:
 
-- React
+- React + React Hooks
 - JavaScript
 - CSS3
 - Vite
