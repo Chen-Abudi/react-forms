@@ -21,6 +21,9 @@ This is a practice project in React, and its main focus is on working with **`fo
 ## 🛠️ Techniques:
 
 - **`Two-Way Binding`**: Gives components a way to share data, two-way binding listen for events and update values simultaneously between parent and child components.
+- **`Web APIs`**:
+  - **FormData**: Provides a way to construct a set of key/value pairs representing form fields and their values.
+- **`Native Browser APIs`**: Native Browser APIs are built into the browser and provide native features that can also be used in a web app.
 
 ---
 
@@ -30,4 +33,4 @@ If you want to strengthen your knowledge and skills of **React, Redux, and more.
 
 ## Visit the Course [&#128073;&#127997; **HERE !**](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
 
-**_`Shoutout to Maximilian Schwarzmüller for this project design, the lectures, the exercises, and the React course in Udemy. Mahalo, Thank you!`_** 🌺
+**_`Shoutout to Maximilian Schwarzmüller for this project and its design, the lectures, the exercises, and the React course in Udemy. Mahalo, Thank you!`_** 🌺
