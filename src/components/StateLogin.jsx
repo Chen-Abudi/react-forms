@@ -16,26 +16,6 @@ export default function Login() {
     handleInputBlur: handlePasswordBlur,
     hasError: passwordHasError,
   } = useInput("", (value) => hasMinLength(value, 6));
-  // const [enteredEmail, setEnteredEmail] = useState("");
-  // const [enteredPassword, setEnteredPassword] = useState("");
-
-  // const [enteredValues, setEnteredValues] = useState({
-  //   email: "",
-  //   password: "",
-  // });
-
-  // const [didEdit, setDidEdit] = useState({
-  //   email: false,
-  //   password: false,
-  // });
-
-  // const emailIsInvalid =
-  //   didEdit.email &&
-  //   !isEmail(enteredValues.email) &&
-  //   !isNotEmpty(enteredValues.email);
-
-  // const passwordIsInvalid =
-  //   didEdit.password && !hasMinLength(enteredValues.password, 6);
 
   function handleFormSubmit(evt) {
     evt.preventDefault();
@@ -46,32 +26,6 @@ export default function Login() {
 
     console.log(emailValue, passwordValue);
   }
-
-  // function handleInputChange(identifier, value) {
-  //   setEnteredValues((prevValues) => ({
-  //     ...prevValues,
-  //     [identifier]: value,
-  //   }));
-  //   setDidEdit((prevEdit) => ({
-  //     ...prevEdit,
-  //     [identifier]: false,
-  //   }));
-  // }
-
-  // function handleInputBlur(identifier) {
-  //   setDidEdit((prevEdit) => ({
-  //     ...prevEdit,
-  //     [identifier]: true,
-  //   }));
-  // }
-
-  // function handleEmailChange(evt) {
-  //   setEnteredEmail(evt.target.value);
-  // }
-
-  // function handlePasswordChange(evt) {
-  //   setEnteredPassword(evt.target.value);
-  // }
 
   return (
     <form onSubmit={handleFormSubmit}>
@@ -88,20 +42,6 @@ export default function Login() {
           value={emailValue}
           error={emailHasError && "Please enter a valid email!"}
         />
-        {/* <div className="control no-margin">
-          <label htmlFor="email">Email</label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            onBlur={() => handleInputBlur("email")}
-            onChange={(evt) => handleInputChange("email", evt.target.value)}
-            value={enteredValues.email}
-          />
-          <div className="control-error">
-            {emailIsInvalid && <p>Please enter a valid email address.</p>}
-          </div>
-        </div> */}
 
         <Input
           label="Password"
@@ -113,17 +53,6 @@ export default function Login() {
           value={passwordValue}
           error={passwordHasError && "Please enter a valid password!"}
         />
-
-        {/* <div className="control no-margin">
-          <label htmlFor="password">Password</label>
-          <input
-            id="password"
-            type="password"
-            name="password"
-            onChange={(evt) => handleInputChange("password", evt.target.value)}
-            value={enteredValues.password}
-          />
-        </div> */}
       </div>
 
       <p className="form-actions">
