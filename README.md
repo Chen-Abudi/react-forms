@@ -1,5 +1,7 @@
 # react-forms
 
+**Developed by** **`Grace Chen Abudi`** 👩🏽‍💻
+
 ## 📣 Overview:
 
 - Intro
@@ -17,6 +19,10 @@ This is a practice project in React, and its main focus is on working with **`fo
 - JavaScript
 - CSS3
 - Vite
+
+## 🛠️ Techniques:
+
+- **`Two-Way Binding`**: Gives components a way to share data, two-way binding listen for events and update values simultaneously between parent and child components.
 
 ---
 
