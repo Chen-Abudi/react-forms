@@ -29,6 +29,8 @@ This is a practice project in React, and its main focus is on working with **`fo
   - **Upon form submission**
   - **`Via built-in validation props`**:
     - **e.g. required**
+- **`Reusable Component`**
+- **`Custom Hooks`**
 
 ---
 
